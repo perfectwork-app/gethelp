@@ -1,0 +1,143 @@
+site_name: PerfectWORK
+site_url: http://127.0.0.1:8000/
+theme:
+  icon:
+    admonition:
+      <type>: <icon> 
+  navigation_depth: 5
+  highlightjs: true
+  hljs_languages:
+      - yaml
+      - python
+      - xml
+      - js
+  features:
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.instant
+  name: material
+  palette:
+    - scheme: default
+      primary: green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue-grey 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
+
+# Plugins
+plugins:
+  - search
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+    - Home: 'index.md'
+    - User Guides: 
+      - PLATFORM: 
+        - Getting Started: 'user/platform/10_getting_started.md'
+        - Application & Modules: 'user/platform/20_application.md'
+        - User and Companies: 'user/platform/30_user_companies.md'
+      - FINANCE & ACCOUNTING: 'user/finance/index.md'
+      - SALES & MARKETING: 'user/finance/index.md'
+      - WAREHOUSE & INVENTORY: 'user/finance/index.md'
+      - SUPPLY CHAIN & LOGISTICS: 'user/finance/index.md'
+      - HUMAN RESOURCES: 'user/finance/index.md'
+      - CUSTOMER SERVICES: 'user/finance/index.md'
+      - KNOWLEDGE & DOCUMENTATION: 'user/finance/index.md'
+      - MANUFACTURING & PRODUCTION: 'user/finance/index.md'
+      - RETAIL BUSINESS: 'user/finance/index.md'
+      - WEBSITE & ECOMMERCE: 'user/finance/index.md'
+    - Developer Guide:
+      - Creating A New Module: 'developer/index.md'
+      - Application Models: 'developer/index.md'
+      - Basic Server Development: 'developer/index.md'
+      - Advanced Server Development: 'developer/index.md'
+      - Managing Data: 'developer/index.md'
+      - Debugging: 'developer/index.md'
+      - Backend View: 'developer/index.md'
+      - Security Access: 'developer/index.md'
+      - Internationalization: 'developer/index.md'
+      - Automation and Workflow: 'developer/index.md'
+      - Controller Access: 'developer/index.md'
+      - Website CMS: 'developer/index.md'
+      - Web Client: 'developer/index.md'
+      - OWL and Javascript: 'developer/index.md'
+      - Performance Optimization: 'developer/index.md'
+      - Point of Sales: 'developer/index.md'
+      - Email and Messaging: 'developer/index.md'
+      - IoT and Devices: 'developer/index.md'
+    - Industrial Solutions:
+      - Clinic Management: 'user/finance/index.md'   
