@@ -2,37 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://127.0.0.1:8000/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/developer/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <loc>http://127.0.0.1:8000/developer_guide/</loc>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/user/finance/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <loc>http://127.0.0.1:8000/user_guide/finance/10/</loc>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/user/platform/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <loc>http://127.0.0.1:8000/user_guide/finance/100/</loc>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/user/platform/10_getting_started/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <loc>http://127.0.0.1:8000/user_guide/finance/110/</loc>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/user/platform/20_application/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <loc>http://127.0.0.1:8000/user_guide/finance/20/</loc>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/user/platform/30_user_companies/</loc>
-         <lastmod>2021-10-25</lastmod>
+         <loc>http://127.0.0.1:8000/user_guide/finance/30/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/finance/40/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/finance/50/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/finance/60/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/finance/70/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/finance/80/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/finance/90/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/10/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/20/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/30/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/40/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/50/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/60/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/user_guide/platform/70/</loc>
+         <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
