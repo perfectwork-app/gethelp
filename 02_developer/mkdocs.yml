@@ -1,0 +1,23 @@
+site_name: developer_guide
+
+nav:
+  - Developer Guide:
+    - Creating A New Module: 'index.md'
+    - Application Models: 
+      - Fields: 'application_model/fields.md'
+    - Basic Server Development: 'index.md'
+    - Advanced Server Development: 'index.md'
+    - Managing Data: 'index.md'
+    - Debugging: 'index.md'
+    - Backend View: 'index.md'
+    - Security Access: 'index.md'
+    - Internationalization: 'index.md'
+    - Automation and Workflow: 'index.md'
+    - Controller Access: 'index.md'
+    - Website CMS: 'index.md'
+    - Web Client: 'index.md'
+    - OWL and Javascript: 'index.md'
+    - Performance Optimization: 'index.md'
+    - Point of Sales: 'index.md'
+    - Email and Messaging: 'index.md'
+    - IoT and Devices: 'index.md'
