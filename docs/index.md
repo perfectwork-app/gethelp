@@ -221,100 +221,76 @@ no_toc: true
 </style>
 
 <!-- Main site Entry button descriptions -->
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">PERFECTWORK
-        <br class="hidden lg:inline-block">Enterprise Business Solution
-      </h1>
-      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+<section>
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <h1 class="sm:text-3xl text-2xl text-red-900 font-medium mb-2 md:w-2/5">PerfectWORK Business Solutions<br/><p class="text-xl italic text-gray-700 font-medium">Perfecting Your Business Decision
+    </p></h1>
+    <div class="md:w-3/5 md:pl-6">
+      <p class="leading-relaxed text-base">The next generation business information system, which helps you to grow your business , with powerful modular design covering all essential aspects of a business.</p>
+      <div class="flex md:mt-4 mt-6">
+        <a href="/gethelp/user_guide"><button class="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded">Documentation</button></a>
+        <a href="https://perfectwork.app" class="text-green-500 inline-flex items-center ml-4">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          </svg>
+        </a>
       </div>
-    </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
     </div>
   </div>
 </section>
 
-<section class="tx-container">
-    <div class="md-grid md-typeset">
-      <div class="tx-hero">
-        <div class="tx-hero__image">
-          <img src="assets/product-layers.png" draggable="false">
-        </div>
-        <div class="tx-hero__content">
-          <h1><b>PerfectWORK</b></h1>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Get started
-          </a>
-          <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
-            Read the Documentation
-          </a>
-        </div>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-white overflow-hidden">
+ <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <!--Card 1-->
+    <a href="/gethelp/01_user_guide" class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="./assets/images/platform.jpg" alt="Platform">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">PerfectWORK Platform</div>
+        <p class="text-gray-700 text-sm font-light">
+          PerfectWORK is the next generation business management system, which helps you to accelerate the growth of your business.
+        </p>
+      </div>
+    </a>
+    <!--Card 2-->
+    <div class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="./assets/images/accounting.jpg" alt="Accounting and Finance" >
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Finance & Accounting</div>
+        <p class="text-gray-700 text-sm font-light">
+           An Easy to Use Accounting System to keep track of organizational Expenses, Receivables and Payables with All Good Practices built-in
+        </p>
       </div>
     </div>
-</section>
-
-<section class="text-gray-600 body-font relative">
-  <div class="absolute inset-0 bg-gray-300">
-    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+    <!--Card 3-->
+    <div class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="./assets/images/sales.jpg" alt="Forest">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Sales & Distribution</div>
+        <p class="text-gray-700 text-sm font-light">
+          Unlock Tremendous Sales Opportunities with a Robust Sales Force Automation
+        </p>
+      </div>
+    </div>
+    <!--Card 4 -->
+    <div class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="/forest.jpg" alt="Forest">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Forest</div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
+      </div>
+    </div>
+    </div>
   </div>
-  <div class="container px-5 py-24 mx-auto flex">
-    <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-      <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-        <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-      </div>
-      <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-      <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Main site box descriptions -->
-<div class="top-hr">
-    <div class="feature-item">
-        <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M15 17v-3h3v-2l4 3.5-4 3.5v-2h-3m2 1v3h-3v2l-4-3.5 4-3.5v2h3M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m9.66-5.27l-2-3.46c-.12-.22-.38-.31-.61-.22l-2.49 1c-.51-.41-1.06-.74-1.69-1l-.37-2.63A.506.506 0 0014 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.26-1.17.59-1.69 1L5 5.05c-.23-.09-.5 0-.61.22l-2 3.46c-.13.21-.08.49.11.64L4.57 11l-.07 1 .07 1-2.11 1.63c-.2.15-.25.43-.12.64l2 3.46c.11.27.4.38.66.27l2.5-1c.24.19.5.37.76.53l1.65-1.4c-.77-.33-1.45-.82-2-1.45l-2.41 1-.77-1.3L6.8 13.8a5.55 5.55 0 010-3.6L4.69 8.65l.75-1.3 2.41 1c.78-.9 1.83-1.53 3-1.78l.4-2.57h1.5l.37 2.62c1.17.24 2.22.88 3 1.77l2.41-1 .75 1.3-2.08 1.51c.09.26.16.53.2.8h2l2.1-1.63a.48.48 0 00.16-.64M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m0-6c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2z" />
-            </svg>
-            Cloud Based Solution
-        </h2>
-        <p>Full & easy access to PerfectWORK anytime and anywhere.</p>
-    </div>
-    <div class="feature-item">
-        <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
-            </svg>Module Design
-        </h2>
-        <p>Always grows with your business </p>
-    </div>
-    <div class="feature-item">
-        <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
-            Technology Stacks
-        </h2>
-        <p>Using latest technologies stack.</p>
-    </div>
 </div>
 
-<div class="top-hr">
-    <div class="hr">
-    </div>
 </div>
-
 
 <!-- Custom narrow footer -->
 <div class="md-footer-meta__inner md-grid">

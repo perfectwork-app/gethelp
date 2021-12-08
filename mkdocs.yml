@@ -1,4 +1,4 @@
-site_name: PERFECTWORK
+site_name: PerfectWORK
 site_url: https://perfectwork-app.github.io/gethelp/
 repo_url: https://github.com/perfectwork-app/gethelp.git
 repo_name: perfectwork-app/gethelp
@@ -8,6 +8,8 @@ edit_uri: tree/3.0/docs/
 copyright: PerfectWORK 2021
 
 theme:
+  font:
+    text: Nunito
   icon:
     repo: fontawesome/brands/github
     admonition:
@@ -34,7 +36,7 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: default
-      primary: green
+      primary: teal
       accent: light-green
       toggle:
         icon: material/toggle-switch-off-outline
@@ -46,6 +48,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 extra:
+  homepage: https://perfectwork.app
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
@@ -75,7 +78,9 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/tailwind.css
 extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
   - javascripts/extra.js
+
 
 # Extensions
 markdown_extensions:
@@ -109,8 +114,8 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid-experimental
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -121,10 +126,12 @@ markdown_extensions:
 
 plugins:   
   - search
+  - mermaid2
+  - macros
   - monorepo
   - awesome-pages
+  - mkdocstrings
   - mkdocs-jupyter
-  - mknotebooks
   - encryptcontent: {
       summary: 'For Partners / Employees Only',
       placeholder: 'Enter Password',
@@ -132,15 +139,16 @@ plugins:
     } 
   - redirects:
       redirect_maps:
-        upgrading.md: upgrade.md
+        # upgrading.md: upgrade.md
         reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
-        sponsorship.md: insiders/index.md
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      htmlmin_opts:
-          remove_comments: true
+        # sponsorship.md: insiders/index.md
+  # This is not working with Mermaid2
+  # - minify:
+  #     minify_html: true
+  #     minify_js: true
+  #     minify_css: true
+  #     htmlmin_opts:
+  #         remove_comments: true
 
 # nav:
 #     - Get Started: 'index.md'
