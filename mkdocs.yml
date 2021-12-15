@@ -1,7 +1,17 @@
 site_name: PerfectWORK
-site_url: http://127.0.0.1:8000/
+site_url: https://perfectwork-app.github.io/gethelp/
+repo_url: https://github.com/perfectwork-app/gethelp
+repo_name: perfectwork-app/gethelp
+edit_uri: tree/3.0/docs/
+
+# Copyright
+copyright: PerfectWORK 2021
+
 theme:
+  font:
+    text: Nunito
   icon:
+    repo: fontawesome/brands/github
     admonition:
       <type>: <icon> 
   navigation_depth: 5
@@ -17,21 +27,28 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
-    - navigation.sections
-    - navigation.instant
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
-      primary: green
+      primary: teal
+      accent: light-green
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: blue-grey 
+      primary: blue-grey
+      accent: light-blue
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
 extra:
+  homepage: https://perfectwork.app
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
@@ -56,9 +73,13 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/squidfunk
 
-# Plugins
-plugins:
-  - search
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/tailwind.css
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - javascripts/extra.js
 
 
 # Extensions
@@ -93,51 +114,49 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid-experimental
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
-extra_css:
-  - stylesheets/extra.css
+plugins:   
+  - search
+  - mermaid2
+  - macros
+  - monorepo
+  - awesome-pages
+  - mkdocstrings
+  - mkdocs-jupyter
+  - encryptcontent: {
+      summary: 'For Partners / Employees Only',
+      placeholder: 'Enter Password',
+      encryption_info_message: 'Contact Us for Partner Access Program',
+    } 
+  - redirects:
+      redirect_maps:
+        # upgrading.md: upgrade.md
+        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+        # sponsorship.md: insiders/index.md
+  # This is not working with Mermaid2
+  # - minify:
+  #     minify_html: true
+  #     minify_js: true
+  #     minify_css: true
+  #     htmlmin_opts:
+  #         remove_comments: true
+
+# nav:
+#     - Get Started: 'index.md'
+#     - User Guides: '!include ./01_user/mkdocs.yml'
+#     - Industrial Solution: '!include ./03_industrial/mkdocs.yml'
+#     - Notebook page: notebook.ipynb
+#     - Python file: python_script.py
 
 nav:
-    - Home: 'index.md'
-    - User Guides: 
-      - PLATFORM: 
-        - Getting Started: 'user/platform/10_getting_started.md'
-        - Application & Modules: 'user/platform/20_application.md'
-        - User and Companies: 'user/platform/30_user_companies.md'
-      - FINANCE & ACCOUNTING: 'user/finance/index.md'
-      - SALES & MARKETING: 'user/finance/index.md'
-      - WAREHOUSE & INVENTORY: 'user/finance/index.md'
-      - SUPPLY CHAIN & LOGISTICS: 'user/finance/index.md'
-      - HUMAN RESOURCES: 'user/finance/index.md'
-      - CUSTOMER SERVICES: 'user/finance/index.md'
-      - KNOWLEDGE & DOCUMENTATION: 'user/finance/index.md'
-      - MANUFACTURING & PRODUCTION: 'user/finance/index.md'
-      - RETAIL BUSINESS: 'user/finance/index.md'
-      - WEBSITE & ECOMMERCE: 'user/finance/index.md'
-    - Developer Guide:
-      - Creating A New Module: 'developer/index.md'
-      - Application Models: 'developer/index.md'
-      - Basic Server Development: 'developer/index.md'
-      - Advanced Server Development: 'developer/index.md'
-      - Managing Data: 'developer/index.md'
-      - Debugging: 'developer/index.md'
-      - Backend View: 'developer/index.md'
-      - Security Access: 'developer/index.md'
-      - Internationalization: 'developer/index.md'
-      - Automation and Workflow: 'developer/index.md'
-      - Controller Access: 'developer/index.md'
-      - Website CMS: 'developer/index.md'
-      - Web Client: 'developer/index.md'
-      - OWL and Javascript: 'developer/index.md'
-      - Performance Optimization: 'developer/index.md'
-      - Point of Sales: 'developer/index.md'
-      - Email and Messaging: 'developer/index.md'
-      - IoT and Devices: 'developer/index.md'
-    - Industrial Solutions:
-      - Clinic Management: 'user/finance/index.md'   
+  - index.md
+  - ...
