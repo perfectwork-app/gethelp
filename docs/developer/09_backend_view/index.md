@@ -1,5 +1,5 @@
 ---
-title: Developer Guide
+title: Front End
 summary: This is Developer Guide
 authors:
     - Wilson Loh

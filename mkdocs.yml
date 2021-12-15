@@ -2,7 +2,7 @@ site_name: PerfectWORK
 site_url: https://perfectwork-app.github.io/gethelp/
 repo_url: https://github.com/perfectwork-app/gethelp
 repo_name: perfectwork-app/gethelp
-edit_uri: tree/3.0/docs/
+edit_uri: blob/3.0/docs/
 
 # Copyright
 copyright: PerfectWORK 2021
@@ -123,6 +123,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+
 
 plugins:   
   - search
