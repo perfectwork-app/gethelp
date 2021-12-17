@@ -49,6 +49,8 @@ theme:
         name: Switch to light mode
 extra:
   homepage: https://perfectwork.app
+  version:
+    provider: mike
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
