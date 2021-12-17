@@ -5,27 +5,27 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://perfectwork-app.github.io/gethelp/01_user_guide/platform/01_getting_started/01_overview/" rel="canonical"/>
-<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<link href="https://perfectwork-app.github.io/gethelp/developer/99_migration/10_actions/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-7.3.6" name="generator"/>
 <title>PerfectWORK</title>
-<link href="../../../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700%7C&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font-family:"Nunito";--md-code-font-family:""}</style>
-<link href="../../../../assets/_mkdocstrings.css" rel="stylesheet"/>
-<link href="../../../../stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../../../stylesheets/tailwind.css" rel="stylesheet"/>
+<link href="../../../assets/_mkdocstrings.css" rel="stylesheet"/>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/tailwind.css" rel="stylesheet"/>
 </head>
 <body data-md-color-accent="light-green" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
-<script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
 <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#browser-requirement">
+<a class="md-skip" href="#openupgrade-from-oca">
           Skip to content
         </a>
 </div>
@@ -49,7 +49,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Overview
+              Migrate from 2.0 to 2.5
             
           </span>
 </div>
@@ -114,27 +114,27 @@
 <div class="md-tabs__inner md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../..">
+<a class="md-tabs__link" href="../../..">
       Getting Started
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../../">
+<a class="md-tabs__link" href="../../../01_user_guide/">
         User Guide
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../02_config_guide/">
+<a class="md-tabs__link" href="../../../02_config_guide/">
         Configuration Guide
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../03_system_guide/">
+<a class="md-tabs__link" href="../../../03_system_guide/">
         Technologies Stack
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../developer/">
+<a class="md-tabs__link md-tabs__link--active" href="../../">
         Developer Guide
       </a>
 </li>
@@ -167,14 +167,14 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../..">
+<a class="md-nav__link" href="../../..">
         Getting Started
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../">User Guide</a>
+<a href="../../../01_user_guide/">User Guide</a>
 <label for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -185,8 +185,8 @@
           User Guide
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_2">
           Platform
           <span class="md-nav__icon md-icon"></span>
@@ -197,8 +197,8 @@
           Platform
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" id="__nav_2_2_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" id="__nav_2_2_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_2_1">
           Getting Started
           <span class="md-nav__icon md-icon"></span>
@@ -209,36 +209,13 @@
           Getting Started
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Overview
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../01_user_guide/platform/01_getting_started/01_overview/">
         Overview
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#browser-requirement">
-    Browser Requirement
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#mobile-phone-and-tablet-support">
-    Mobile phone and tablet support
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../02_navigation/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/01_getting_started/02_navigation/">
         Navigation - UI
       </a>
 </li>
@@ -258,12 +235,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../02_configuration/01_companies/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/02_configuration/01_companies/">
         Companies
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../02_configuration/02_users/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/02_configuration/02_users/">
         Users
       </a>
 </li>
@@ -283,27 +260,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../10_apps_integration/03_modules/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/10_apps_integration/03_modules/">
         Application &amp; Modules
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../10_apps_integration/04_connect/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/10_apps_integration/04_connect/">
         Connect App
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../10_apps_integration/05_authentication/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/10_apps_integration/05_authentication/">
         Authentication
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../10_apps_integration/google/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/10_apps_integration/google/">
         Google
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../10_apps_integration/unsplash/">
+<a class="md-nav__link" href="../../../01_user_guide/platform/10_apps_integration/unsplash/">
         Unsplash
       </a>
 </li>
@@ -326,7 +303,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../finance/getting_started/">
+<a class="md-nav__link" href="../../../01_user_guide/finance/getting_started/">
         Getting Started
       </a>
 </li>
@@ -334,7 +311,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../odooly_pw.ipynb">
+<a class="md-nav__link" href="../../../odooly_pw.ipynb">
         Notebook page
       </a>
 </li>
@@ -344,7 +321,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../02_config_guide/">Configuration Guide</a>
+<a href="../../../02_config_guide/">Configuration Guide</a>
 </div>
 <nav aria-label="Configuration Guide" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
@@ -358,7 +335,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../03_system_guide/">Technologies Stack</a>
+<a href="../../../03_system_guide/">Technologies Stack</a>
 </div>
 <nav aria-label="Technologies Stack" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
@@ -369,10 +346,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../developer/">Developer Guide</a>
+<a href="../../">Developer Guide</a>
 <label for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -386,7 +363,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../developer/09_backend_view/">Backend Views</a>
+<a href="../../09_backend_view/">Backend Views</a>
 <label for="__nav_5_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -398,17 +375,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../developer/09_backend_view/10_actions/">
+<a class="md-nav__link" href="../../09_backend_view/10_actions/">
         Actions
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../developer/99_migration/">Database Migration</a>
+<a href="../">Database Migration</a>
 <label for="__nav_5_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -419,18 +396,135 @@
           Database Migration
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../developer/99_migration/10_actions/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Migrate from 2.0 to 2.5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Migrate from 2.0 to 2.5
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#openupgrade-from-oca">
+    OpenUpgrade from OCA
+  </a>
+<nav aria-label="OpenUpgrade from OCA" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../developer/99_migration/12_openupgrade/">
+<a class="md-nav__link" href="#migrating-your-database">
+    Migrating your database
+  </a>
+<nav aria-label="Migrating your database" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get-the-code">
+    Get the code
+  </a>
+<nav aria-label="Get the code" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#openupgrade">
+    OpenUpgrade
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#openupgradelib">
+    openupgradelib
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-migration-scripts-for-installed-modules">
+    Check migration scripts for installed modules
+  </a>
+<nav aria-label="Check migration scripts for installed modules" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remove-modules-not-available">
+    Remove modules not available
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clean-up-database">
+    Clean up database
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#oca-and-syc-modules">
+    OCA and SYC modules
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make-a-copy-of-the-database">
+    Make a copy of the database
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adjust-the-configuration-for-odoo-and-openupgrade">
+    Adjust the configuration for Odoo and OpenUpgrade
+  </a>
+<nav aria-label="Adjust the configuration for Odoo and OpenUpgrade" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration-options">
+    Configuration options
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obsolete-options-in-the-odoo-configuration-file">
+    Obsolete options in the Odoo configuration file¶
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-the-upgrade-fix-data-and-repeat">
+    Run the upgrade, fix data and repeat…
+  </a>
+<nav aria-label="Run the upgrade, fix data and repeat…" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#write-the-missing-migration-scripts">
+    Write the missing migration scripts
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../12_openupgrade/">
         Journey to PW 2.5 ( ipynb )
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../developer/99_migration/15_faq/">
+<a class="md-nav__link" href="../15_faq/">
         Migration Issues to 2.5
       </a>
 </li>
@@ -455,14 +549,108 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#browser-requirement">
-    Browser Requirement
+<a class="md-nav__link" href="#openupgrade-from-oca">
+    OpenUpgrade from OCA
+  </a>
+<nav aria-label="OpenUpgrade from OCA" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#mobile-phone-and-tablet-support">
-    Mobile phone and tablet support
+<a class="md-nav__link" href="#migrating-your-database">
+    Migrating your database
   </a>
+<nav aria-label="Migrating your database" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get-the-code">
+    Get the code
+  </a>
+<nav aria-label="Get the code" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#openupgrade">
+    OpenUpgrade
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#openupgradelib">
+    openupgradelib
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-migration-scripts-for-installed-modules">
+    Check migration scripts for installed modules
+  </a>
+<nav aria-label="Check migration scripts for installed modules" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remove-modules-not-available">
+    Remove modules not available
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clean-up-database">
+    Clean up database
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#oca-and-syc-modules">
+    OCA and SYC modules
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make-a-copy-of-the-database">
+    Make a copy of the database
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adjust-the-configuration-for-odoo-and-openupgrade">
+    Adjust the configuration for Odoo and OpenUpgrade
+  </a>
+<nav aria-label="Adjust the configuration for Odoo and OpenUpgrade" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration-options">
+    Configuration options
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obsolete-options-in-the-odoo-configuration-file">
+    Obsolete options in the Odoo configuration file¶
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-the-upgrade-fix-data-and-repeat">
+    Run the upgrade, fix data and repeat…
+  </a>
+<nav aria-label="Run the upgrade, fix data and repeat…" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#write-the-missing-migration-scripts">
+    Write the missing migration scripts
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -471,37 +659,138 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/perfectwork-app/gethelp/blob/3.0/docs/01_user_guide/platform/01_getting_started/01_overview.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/perfectwork-app/gethelp/blob/3.0/docs/developer/99_migration/10_actions.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1>Overview</h1>
-<p>PerfectWORK is a very feature-filled business application framework, with literally hundreds of applications and modules available. When you first access your PerfectWORK instance, the only functionality you will have is a limited messaging options between users. From there, PerfectWORK allows you to purchase and install the applications you need, as you need them. This flexibility makes PerfectWORK much more accessible than many business software solutions.</p>
+<h1>Migrate from 2.0 to 2.5</h1>
+<h2 id="openupgrade-from-oca">OpenUpgrade from OCA<a class="headerlink" href="#openupgrade-from-oca" title="Permanent link">¶</a></h2>
+<p>Tools to upgrade Odoo instances from a major version to another
+This OCA project aims to provide an Open Source upgrade path for Odoo from one major Odoo version to the next one.</p>
 <p><br/></p>
-<p>Not long ago, nearly all companies kept their primary information systems in-house. This approach not only requires a lot of capital expense in purchasing servers and software licenses, but also creates a lot of responsibilities and risks in backing up data and ensuring business continuity. Today, more and more companies are choosing to host their business applications in online networks commonly called the cloud. PerfectWORK allows you the flexibility of both options—either hosting on your own hardware, or utilizing PerfectWORK's online software services.</p>
-<p><br/></p>
-<p>The best thing about accessing PerfectWORK Online is that you can jump in and start using the software right away. You don't have to decide what operating system (OS) to use, and you don't have to install any software at all. Just enter the URL into your web browser and you are ready to get started.</p>
-<p><br/></p>
-<p>Another added benefit of taking this approach is that you will verify that your web browser is up to date and compatible with the latest version of PerfectWORK. You can expect to put a great deal of time into determining which PerfectWORK applications / modules are right for your company.
-Taking a few hours to use the PerfectWORK Online version is time well spent, and you can put off installing PerfectWORK until you are more certain it is the right software for your business.</p>
-<h3 id="browser-requirement">Browser Requirement<a class="headerlink" href="#browser-requirement" title="Permanent link">¶</a></h3>
-<p>PerfectWORK is designed to run on a variety of modern web browsers. Supported browsers include the following:
-- Google Chrome (recommended) 
-- Firefox
-- Microsoft Edge
-- Safari</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Macintosh users will need to make sure they are running macOS X or above. Users running older Macintosh systems are currently having difficulties running PerfectWORK version 3. Also, in our experience, Google Chrome tends to offer the best experience in working with PerfectWORK. </p>
+<p>As PerfectWORK is based on Odoo framework, table below shows the matching of Odoo version of PerfectWORK releases.</p>
+<div class="admonition note">
+<p class="admonition-title">PerfectWORK and Odoo version</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>PerfectWORK</strong></th>
+<th align="center"><strong>Odoo Community</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>2.0</strong></td>
+<td align="center">11.0</td>
+</tr>
+<tr>
+<td align="center">2.5</td>
+<td align="center">12.0</td>
+</tr>
+<tr>
+<td align="center"><strong>3.0</strong></td>
+<td align="center">13.0</td>
+</tr>
+<tr>
+<td align="center">3.3</td>
+<td align="center">14.0</td>
+</tr>
+<tr>
+<td align="center">3.6</td>
+<td align="center">15.0</td>
+</tr>
+<tr>
+<td align="center"><em><strong>4.0</strong></em></td>
+<td align="center">16.0</td>
+</tr>
+</tbody>
+</table>
 </div>
-<h3 id="mobile-phone-and-tablet-support">Mobile phone and tablet support<a class="headerlink" href="#mobile-phone-and-tablet-support" title="Permanent link">¶</a></h3>
-<p>PerfectWORK has included native support for mobile phones and tablets. Menus are designed to flow and format properly. The new website application even includes a preview within the portal administration to emulate how the site would appear on a mobile phone. While you still suffer many of the limitations that come with a small screen size, the applications are functional and this makes it even easier for developers to create mobile Odoo applications.</p>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h3>
+<p>Odoo is an open source business application suite and development platform. This project, OpenUpgrade, aims to provide an Open Source upgrade path for Odoo. This is a community initiative, as the open source version of Odoo does not support migrations from one major release to another. Instead, migrations are part of a support package sold by Odoo SA. Note that the name of the project refers to the old name of Odoo, OpenERP.</p>
+<div class="admonition info">
+<p class="admonition-title">The project is hosted as two separate GitHub projects</p>
+<ul>
+<li><a href="https://github.com/OCA/openupgrade">https://github.com/OCA/openupgrade</a><ul>
+<li>The branches in the first project contain the framework, as well as the database analysis and the migration scripts.</li>
+</ul>
+</li>
+<li><a href="https://github.com/OCA/openupgradelib">https://github.com/OCA/openupgradelib</a><ul>
+<li>The second project contains a library with helper functions. It can be used in the migration of any Odoo module.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Changes in OpenUpgrade for PW 3.3</p>
+<p>Before Odoo 14.0, the branches in <a href="https://github.com/OCA/openupgrade">https://github.com/OCA/openupgrade</a> contain copies (or forks in Git terminology) of the Odoo main project, but with extra commits that include the framework, and the analysis and the migration scripts for each module.</p>
+</div>
+<h3 id="migrating-your-database">Migrating your database<a class="headerlink" href="#migrating-your-database" title="Permanent link">¶</a></h3>
+<p>Check out the code manually and upgrade your database by calling odoo-bin, (or openerp-server) directly. You will want to do this when you are working on developing migration scripts for uncovered modules.</p>
+<h4 id="get-the-code">Get the code<a class="headerlink" href="#get-the-code" title="Permanent link">¶</a></h4>
+<h5 id="openupgrade">OpenUpgrade<a class="headerlink" href="#openupgrade" title="Permanent link">¶</a></h5>
+<div class="admonition info">
+<p class="admonition-title">PerfectWORK 3.3</p>
+<p>Make the <em><strong>openupgrade_framework</strong></em> and the <em><strong>openupgrade_scripts</strong></em> modules available in the addons path in the Odoo instance of the new version.</p>
+</div>
+<p>Or, for older versions: check out the OpenUpgrade source code from Github for the branches you need. Each branch migrates to its version from the previous version, so branch 13.0 migrates from 12.0 to 13.0. If you are migrating across multiple versions, you need to run each version of OpenUpgrade in order. <em>Skipping versions is not supported</em>.</p>
+<p><br/></p>
+<p>The OpenUpgrade repository includes both openupgrade_framework and openupgrade_scripts:</p>
+<p><a href="https://github.com/OCA/openupgrade">https://github.com/OCA/openupgrade</a></p>
+<h5 id="openupgradelib">openupgradelib<a class="headerlink" href="#openupgradelib" title="Permanent link">¶</a></h5>
+<p>When installing the openupgradelib make sure you check out the latest version from github to get the latest updates and fixes:</p>
+<div class="highlight"><pre><span></span><code>pip install git+https://github.com/OCA/openupgradelib.git@master#egg<span class="o">=</span>openupgradelib
+</code></pre></div>
+<h4 id="check-migration-scripts-for-installed-modules">Check migration scripts for installed modules<a class="headerlink" href="#check-migration-scripts-for-installed-modules" title="Permanent link">¶</a></h4>
+<p>Check if there are migration scripts provided for the set of modules that are installed in your Odoo database. If there are modules for which no migration scripts have been developed yet, your migration may fail or the integrity of your database may be lacking. Check the module coverage in this documentation under Module coverage and refer to the Migration script development documentation to add the missing migration scripts.</p>
+<p>The simplest way to do this by running the following command:
+<br/>
+<div class="highlight"><pre><span></span><code>./odoo-bin -c pw.conf -d <span class="o">[</span>database<span class="o">]</span> -u all
+</code></pre></div></p>
+<h5 id="remove-modules-not-available">Remove modules not available<a class="headerlink" href="#remove-modules-not-available" title="Permanent link">¶</a></h5>
+<p>You may need to remove those modules, which are obselete in the next major version</p>
+<ul>
+<li>backend theme ( pw_backend_theme )</li>
+<li>OCA web_responsive module</li>
+<li>Flectra converted modules</li>
+<li>website and related modules</li>
+</ul>
+<h5 id="clean-up-database">Clean up database<a class="headerlink" href="#clean-up-database" title="Permanent link">¶</a></h5>
+<p>May need to install the following module for database cleanup</p>
+<p><a href="https://apps.odoo.com/apps/modules/11.0/database_cleanup/">https://apps.odoo.com/apps/modules/11.0/database_cleanup/</a></p>
+<h5 id="oca-and-syc-modules">OCA and SYC modules<a class="headerlink" href="#oca-and-syc-modules" title="Permanent link">¶</a></h5>
+<p>Please ensure all the addons for the database are located in the addons path ( PW_ADDONS.2.5 )</p>
+<p>If the module is not available at the higher version, you need to remove the modules or you need to write your own migration scripts for the module.</p>
+<h4 id="make-a-copy-of-the-database">Make a copy of the database<a class="headerlink" href="#make-a-copy-of-the-database" title="Permanent link">¶</a></h4>
+<p>Decide which database you are going to upgrade. You absolutely must make a backup of your live database before you start this process!</p>
+<h4 id="adjust-the-configuration-for-odoo-and-openupgrade">Adjust the configuration for Odoo and OpenUpgrade<a class="headerlink" href="#adjust-the-configuration-for-odoo-and-openupgrade" title="Permanent link">¶</a></h4>
+<p>Edit the configuration files and command line parameters to point to the database you are going to upgrade. The recommended command line parameters are the <strong><em>--update all --stop-after-init --load=base,web,openupgrade_framework</em></strong> flags.</p>
+<p><br/></p>
+<p>For versions earlier than 14.0 that are running the OpenUpgrade fork rather than Odoo itself, you <em>do not pass the load parameter</em>.</p>
+<h5 id="configuration-options">Configuration options<a class="headerlink" href="#configuration-options" title="Permanent link">¶</a></h5>
+<p>When migrating across several versions of Odoo, setting the target version as an environment variable allows OpenUpgrade to skip methods that are called in every version but really only need to run in the target version. Make the target version available to OpenUpgrade with:</p>
+<p>export OPENUPGRADE_TARGET_VERSION=13.0
+(when migrating up to 13.0)</p>
+<h5 id="obsolete-options-in-the-odoo-configuration-file">Obsolete options in the Odoo configuration file¶<a class="headerlink" href="#obsolete-options-in-the-odoo-configuration-file" title="Permanent link">¶</a></h5>
+<p>Versions of OpenUpgrade earlier than 14.0 allow for the following configuration options. Add these options to a separate stanza in the server configuration file under a header [openupgrade]</p>
+<ul>
+<li>
+<p><strong>autoinstall</strong> - A dictionary with module name keys and lists of module names as values. If a key module is installed on your database, the modules from the value (and their dependencies) are selected for installation as well.</p>
+</li>
+<li>
+<p><strong>force_deps</strong> - A dictionary with module name keys and lists of module names as values. If a key module is installed on your database, the modules from the value will be treated as a module dependency. With this directive, you can manipulate the order in which the modules are migrated. If the modules from the value are not already installed on your database, they will be selected for installation (as will their dependencies). Be careful not to introduce a circular dependency using this directive.</p>
+</li>
+</ul>
+<h4 id="run-the-upgrade-fix-data-and-repeat">Run the upgrade, fix data and repeat…<a class="headerlink" href="#run-the-upgrade-fix-data-and-repeat" title="Permanent link">¶</a></h4>
+<p>Run the upgrade and check for errors. You will probably learn a lot about your data and have to do some manual clean up before and after the upgrade. Expect to repeat the process several times as you encounter errors, clean up your data, and try again. If necessary, ask for help or report bugs on Github.</p>
+<h5 id="write-the-missing-migration-scripts">Write the missing migration scripts<a class="headerlink" href="#write-the-missing-migration-scripts" title="Permanent link">¶</a></h5>
+<p>At this stage, if some of your modules don’t have yet migration scripts, you might need to add them yourself. Read more about the development of migrations scripts in Migration script development</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: PerfectWORK" class="md-footer__link md-footer__link--prev" href="../../../" rel="prev">
+<a aria-label="Previous: Migration Guide (OpenUpgrade)" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -510,17 +799,17 @@ Taking a few hours to use the PerfectWORK Online version is time well spent, and
 <span class="md-footer__direction">
                 Previous
               </span>
-              PerfectWORK
+              Migration Guide (OpenUpgrade)
             </div>
 </div>
 </a>
-<a aria-label="Next: Navigation - UI" class="md-footer__link md-footer__link--next" href="../02_navigation/" rel="next">
+<a aria-label="Next: Journey to PW 2.5 ( ipynb )" class="md-footer__link md-footer__link--next" href="../12_openupgrade/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Navigation - UI
+              Journey to PW 2.5 ( ipynb )
             </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -568,9 +857,9 @@ Taking a few hours to use the PerfectWORK Online version is time well spent, and
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
-<script src="../../../../assets/javascripts/bundle.b1047164.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-<script src="../../../../javascripts/extra.js"></script>
+<script src="../../../javascripts/extra.js"></script>
 </body>
 </html>
