@@ -227,9 +227,9 @@ no_toc: true
     <h1 class="sm:text-3xl text-2xl text-red-900 font-medium mb-2 md:w-2/5">PerfectWORK Business Solutions<br/><p class="text-xl italic text-gray-700 font-medium">Perfecting Your Business Decision
     </p></h1>
     <div class="md:w-3/5 md:pl-6">
-      <p class="leading-relaxed text-base">The next generation business information system, which helps you to grow your business , with powerful modular design covering all essential aspects of a business.</p>
+      <p class="leading-relaxed text-base">The next generation business information system, which helps you to grow your business , with powerful modular design covering all essential aspects of a business. It is better now</p>
       <div class="flex md:mt-4 mt-6">
-        <a href="/gethelp/01_user_guide"><button class="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded">Documentation</button></a>
+        <a href="/01_user_guide"><button class="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded">Documentation</button></a>
         <a href="https://perfectwork.app" class="text-green-500 inline-flex items-center ml-4">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
           </svg>
