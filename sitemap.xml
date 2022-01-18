@@ -166,6 +166,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://perfectwork-app.github.io/gethelp/02_solution_guide/01_clinic_management/</loc>
+         <lastmod>2022-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://perfectwork-app.github.io/gethelp/02_solution_guide/02_mentoring/</loc>
+         <lastmod>2022-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://perfectwork-app.github.io/gethelp/03_system_guide/</loc>
          <lastmod>2022-01-18</lastmod>
          <changefreq>daily</changefreq>
