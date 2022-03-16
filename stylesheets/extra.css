@@ -295,7 +295,7 @@ flex-wrap: wrap;
 background: #ddd;
 }
 .tabbed-set .tabbed-content {
-display: none;
+display: flex;
 order: 99;
 width: 100%;
 }
