@@ -605,15 +605,11 @@
     Logging in
   </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#calling-methods">
     Calling Methods
   </a>
-<nav aria-label="Calling Methods" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#list-records">
     List Records
@@ -760,8 +756,9 @@ The examples do not include imports as these imports couldn’t be pasted in the
 </div>
 </div>
 </input></input></input></input></div>
-<p>Result:
-<code>json { "server_version": "13.0", "server_version_info": [13, 0, 0, "final", 0], "server_serie": "13.0", "protocol_version": 1, }</code></p>
+<p><strong>Result</strong>:
+<div class="highlight"><pre><span></span><code>{ "server_version": "13.0", "server_version_info": [13, 0, 0, "final", 0], "server_serie": "13.0", "protocol_version": 1, } `
+</code></pre></div></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><input id="__tabbed_3_3" name="__tabbed_3" type="radio"><input id="__tabbed_3_4" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Python</label><label for="__tabbed_3_2">Ruby</label><label for="__tabbed_3_3">PHP</label><label for="__tabbed_3_4">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -782,7 +779,7 @@ The examples do not include imports as these imports couldn’t be pasted in the
 </div>
 </div>
 </input></input></input></input></div>
-<h2 id="calling-methods">Calling Methods<a class="headerlink" href="#calling-methods" title="Permanent link">¶</a></h2>
+<h3 id="calling-methods">Calling Methods<a class="headerlink" href="#calling-methods" title="Permanent link">¶</a></h3>
 <p>The second endpoint is <em>xmlrpc/2/object</em>. It is used to call methods of PerfectWORK data models via the <em>execute_kw</em> RPC function.</p>
 <p>Each call to <em>execute_kw</em> takes the following parameters:</p>
 <ul>
@@ -830,8 +827,8 @@ The examples do not include imports as these imports couldn’t be pasted in the
 </div>
 </div>
 </input></input></input></input></div>
-<p>Result:
-    <div class="highlight"><pre><span></span><code><span class="kc">true</span>
+<p><strong>Result</strong>:
+    <div class="highlight"><pre><span></span><code>true
 </code></pre></div></p>
 </div>
 <h3 id="list-records">List Records<a class="headerlink" href="#list-records" title="Permanent link">¶</a></h3>
@@ -866,8 +863,8 @@ The examples do not include imports as these imports couldn’t be pasted in the
 </div>
 </div>
 </input></input></input></input></div>
-<p>Result:
-    <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">74</span><span class="p">]</span>
+<p><strong>Result</strong>:
+    <div class="highlight"><pre><span></span><code>[7, 18, 12, 14, 17, 19, 8, 31, 26, 16, 13, 20, 30, 22, 29, 15, 23, 28, 74]
 </code></pre></div></p>
 </div>
 <h4 id="pagination">Pagination<a class="headerlink" href="#pagination" title="Permanent link">¶</a></h4>
@@ -1413,7 +1410,7 @@ One2many to the Views defined for the model</p>
 One2many relation to the Access Rights set on the model</p>
 </li>
 </ul>
-<p>ir.model can be used to</p>
+<p><em>ir.model</em> can be used to</p>
 <ul>
 <li>Query the system for installed models (as a precondition to operations on the model or to explore the system’s content).</li>
 <li>Get information about a specific model (generally by listing the fields associated with it).</li>
@@ -1421,12 +1418,12 @@ One2many relation to the Access Rights set on the model</p>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-</div>
 <ul>
 <li>Custom model names must start with x_.</li>
 <li>The state must be provided and set to manual, otherwise the model will not be loaded.</li>
 <li>It is not possible to add new methods to a custom model, only fields.</li>
 </ul>
+</div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="17:4"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio"/><input id="__tabbed_17_2" name="__tabbed_17" type="radio"/><input id="__tabbed_17_3" name="__tabbed_17" type="radio"/><input id="__tabbed_17_4" name="__tabbed_17" type="radio"/><div class="tabbed-labels"><label for="__tabbed_17_1">Python</label><label for="__tabbed_17_2">Ruby</label><label for="__tabbed_17_3">PHP</label><label for="__tabbed_17_4">Java</label></div>
@@ -1558,11 +1555,11 @@ type-specific properties and customizations, see the fields documentation for de
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-</div>
 <ul>
 <li>Like custom models, only new fields created with state="manual" are activated as actual fields on the model.</li>
-<li>Computed fields can not be added via ir.model.fields, some field meta-information (defaults, onchange) can not be set either.</li>
+<li>Computed fields can not be added via <em>ir.model.fields</em>, some field meta-information (defaults, onchange) can not be set either.</li>
 </ul>
+</div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="18:4"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio"/><input id="__tabbed_18_2" name="__tabbed_18" type="radio"/><input id="__tabbed_18_3" name="__tabbed_18" type="radio"/><input id="__tabbed_18_4" name="__tabbed_18" type="radio"/><div class="tabbed-labels"><label for="__tabbed_18_1">Python</label><label for="__tabbed_18_2">Ruby</label><label for="__tabbed_18_3">PHP</label><label for="__tabbed_18_4">Java</label></div>
@@ -1662,16 +1659,16 @@ type-specific properties and customizations, see the fields documentation for de
 </div>
 <p>Result:
     <div class="highlight"><pre><span></span><code><span class="p">[</span>
-<span class="p">{</span>
-    <span class="nt">"create_uid"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Administrator"</span><span class="p">],</span>
-    <span class="nt">"x_name"</span><span class="p">:</span> <span class="s2">"test record"</span><span class="p">,</span>
-    <span class="nt">"__last_update"</span><span class="p">:</span> <span class="s2">"2014-11-12 16:32:13"</span><span class="p">,</span>
-    <span class="nt">"write_uid"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Administrator"</span><span class="p">],</span>
-    <span class="nt">"write_date"</span><span class="p">:</span> <span class="s2">"2014-11-12 16:32:13"</span><span class="p">,</span>
-    <span class="nt">"create_date"</span><span class="p">:</span> <span class="s2">"2014-11-12 16:32:13"</span><span class="p">,</span>
-    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">"display_name"</span><span class="p">:</span> <span class="s2">"test record"</span>
-<span class="p">}</span>
+  <span class="p">{</span>
+      <span class="nt">"create_uid"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Administrator"</span><span class="p">],</span>
+      <span class="nt">"x_name"</span><span class="p">:</span> <span class="s2">"test record"</span><span class="p">,</span>
+      <span class="nt">"__last_update"</span><span class="p">:</span> <span class="s2">"2014-11-12 16:32:13"</span><span class="p">,</span>
+      <span class="nt">"write_uid"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"Administrator"</span><span class="p">],</span>
+      <span class="nt">"write_date"</span><span class="p">:</span> <span class="s2">"2014-11-12 16:32:13"</span><span class="p">,</span>
+      <span class="nt">"create_date"</span><span class="p">:</span> <span class="s2">"2014-11-12 16:32:13"</span><span class="p">,</span>
+      <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">"display_name"</span><span class="p">:</span> <span class="s2">"test record"</span>
+  <span class="p">}</span>
 <span class="p">]</span>   
 </code></pre></div></p>
 </div>
