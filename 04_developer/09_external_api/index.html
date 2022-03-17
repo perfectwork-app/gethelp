@@ -729,8 +729,9 @@
 The examples do not include imports as these imports couldn’t be pasted in the code.</p>
 </div>
 <h3 id="logging-in">Logging in<a class="headerlink" href="#logging-in" title="Permanent link">¶</a></h3>
-<p>PerfectWORK requires users of the API to be authenticated before they can query most data.</p>
-<p>The <em>xmlrpc/2/common</em> endpoint provides meta-calls which don’t require authentication, such as the authentication itself or fetching version information. To verify if the connection information is correct before trying to authenticate, the simplest call is to ask for the server’s version. The authentication itself is done through the <em>authenticate</em> function and returns a user identifier (<em>uid</em>) used in authenticated calls instead of the login.</p>
+<p>PerfectWORK requires users of the API to be authenticated before they can query most data.
+<br><br/>
+The <em>xmlrpc/2/common</em> endpoint provides meta-calls which don’t require authentication, such as the authentication itself or fetching version information. To verify if the connection information is correct before trying to authenticate, the simplest call is to ask for the server’s version. The authentication itself is done through the <em>authenticate</em> function and returns a user identifier (<em>uid</em>) used in authenticated calls instead of the login.</br></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><input id="__tabbed_2_4" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Python</label><label for="__tabbed_2_2">Ruby</label><label for="__tabbed_2_3">PHP</label><label for="__tabbed_2_4">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -780,8 +781,9 @@ The examples do not include imports as these imports couldn’t be pasted in the
 </div>
 </input></input></input></input></div>
 <h3 id="calling-methods">Calling Methods<a class="headerlink" href="#calling-methods" title="Permanent link">¶</a></h3>
-<p>The second endpoint is <em>xmlrpc/2/object</em>. It is used to call methods of PerfectWORK data models via the <em>execute_kw</em> RPC function.</p>
-<p>Each call to <em>execute_kw</em> takes the following parameters:</p>
+<p>The second endpoint is <em>xmlrpc/2/object</em>. It is used to call methods of PerfectWORK data models via the <em>execute_kw</em> RPC function.
+<br/><br/>
+Each call to <em>execute_kw</em> takes the following parameters:</p>
 <ul>
 <li>the database to use, a string</li>
 <li>the user id (retrieved through <em>authenticate</em>), an integer</li>
@@ -833,8 +835,8 @@ The examples do not include imports as these imports couldn’t be pasted in the
 </div>
 <h3 id="list-records">List Records<a class="headerlink" href="#list-records" title="Permanent link">¶</a></h3>
 <p>Records can be listed and filtered via <em>search()</em>.
-<br><br/>
-<em>search()</em> takes a mandatory <em>domain</em> filter (possibly empty), and returns the database identifiers of all records matching the filter.</br></p>
+<br/><br/>
+<em>search()</em> takes a mandatory <em>domain</em> filter (possibly empty), and returns the database identifiers of all records matching the filter.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>To list customer companies, for instance:</p>
@@ -1028,8 +1030,9 @@ Conversely, picking only three fields deemed interesting.</p>
 <p>Even if the <em>id</em> field is not requested, it is always returned.</p>
 </div>
 <h3 id="list-record-fields">List record fields<a class="headerlink" href="#list-record-fields" title="Permanent link">¶</a></h3>
-<p><em>fields_get()</em> can be used to inspect a model’s fields and check which ones seem to be of interest.</p>
-<p>Because it returns a large amount of meta-information (it is also used by client programs) it should be filtered before printing, the most interesting items for a human user are string (the field’s label), <em>help</em> (a help text if available) and <em>type</em> (to know which values to expect, or to send when updating a record).</p>
+<p><em>fields_get()</em> can be used to inspect a model’s fields and check which ones seem to be of interest.
+<br/><br/>
+Because it returns a large amount of meta-information (it is also used by client programs) it should be filtered before printing, the most interesting items for a human user are string (the field’s label), <em>help</em> (a help text if available) and <em>type</em> (to know which values to expect, or to send when updating a record).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="10:4"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio"/><input id="__tabbed_10_2" name="__tabbed_10" type="radio"/><input id="__tabbed_10_3" name="__tabbed_10" type="radio"/><input id="__tabbed_10_4" name="__tabbed_10" type="radio"/><div class="tabbed-labels"><label for="__tabbed_10_1">Python</label><label for="__tabbed_10_2">Ruby</label><label for="__tabbed_10_3">PHP</label><label for="__tabbed_10_4">Java</label></div>
