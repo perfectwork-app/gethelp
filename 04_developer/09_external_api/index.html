@@ -455,6 +455,28 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" id="__nav_2_3_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../01_application/02_finance/10_inventory/">Inventory Management</a>
+<label for="__nav_2_3_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Inventory Management" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_4">
+<span class="md-nav__icon md-icon"></span>
+          Inventory Management
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../01_application/02_finance/10_inventory/01_inventory_valuation/">
+        Inventory Valuation Configuration
+      </a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -929,7 +951,7 @@ Each call to <em>execute_kw</em> takes the following parameters:</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>To list customer companies, for instance:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio"><input id="__tabbed_7_2" name="__tabbed_7" type="radio"><input id="__tabbed_7_3" name="__tabbed_7" type="radio"><input id="__tabbed_7_4" name="__tabbed_7" type="radio"/><div class="tabbed-labels"><label for="__tabbed_7_1">Python</label><label for="__tabbed_7_2">Ruby</label><label for="__tabbed_7_3">PHP</label><label for="__tabbed_7_4">Java</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio"><input id="__tabbed_7_2" name="__tabbed_7" type="radio"><input id="__tabbed_7_3" name="__tabbed_7" type="radio"><input id="__tabbed_7_4" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="__tabbed_7_1">Python</label><label for="__tabbed_7_2">Ruby</label><label for="__tabbed_7_3">PHP</label><label for="__tabbed_7_4">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="n">models</span><span class="o">.</span><span class="n">execute_kw</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="s1">'res.partner'</span><span class="p">,</span> <span class="s1">'search_count'</span><span class="p">,</span> <span class="p">[[[</span><span class="s1">'is_company'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="kc">True</span><span class="p">]]])</span>
@@ -953,7 +975,7 @@ Each call to <em>execute_kw</em> takes the following parameters:</p>
 </code></pre></div>
 </div>
 </div>
-</input></input></input></div>
+</input></input></input></input></div>
 <p>Result:
     <div class="highlight"><pre><span></span><code><span class="mi">19</span>
 </code></pre></div></p>
