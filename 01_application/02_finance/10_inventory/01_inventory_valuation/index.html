@@ -509,44 +509,22 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#inventory-valuation-manual-or-automated">
-    Inventory Valuation: Manual or Automated
-  </a>
-<nav aria-label="Inventory Valuation: Manual or Automated" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#manual-inventory-valuation">
-    Manual Inventory Valuation
-  </a>
-<nav aria-label="Manual Inventory Valuation" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#continental-accounting">
-    Continental Accounting
-  </a>
-<nav aria-label="Continental Accounting" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#vendor-bill">
-    Vendor Bill
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#goods-receptions">
-    Goods Receptions
+<a class="md-nav__link" href="#inventory-valuation-automated-or-manual">
+    Inventory Valuation: Automated or Manual
   </a>
 </li>
 </ul>
 </nav>
 </li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../02_automated_inventory_valuation/">
+        Automated Inventory Valuation
+      </a>
 </li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../03_manual_inventory_valuation/">
+        Manual Inventory Valuation
+      </a>
 </li>
 </ul>
 </nav>
@@ -725,41 +703,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#inventory-valuation-manual-or-automated">
-    Inventory Valuation: Manual or Automated
+<a class="md-nav__link" href="#inventory-valuation-automated-or-manual">
+    Inventory Valuation: Automated or Manual
   </a>
-<nav aria-label="Inventory Valuation: Manual or Automated" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#manual-inventory-valuation">
-    Manual Inventory Valuation
-  </a>
-<nav aria-label="Manual Inventory Valuation" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#continental-accounting">
-    Continental Accounting
-  </a>
-<nav aria-label="Continental Accounting" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#vendor-bill">
-    Vendor Bill
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#goods-receptions">
-    Goods Receptions
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -935,83 +881,19 @@ The average cost does not change when products leave the warehouse.
 Pay attention, that this is a <strong>financial FIFO</strong>. The first value “in” is the first value “out”, no matter the storage location, warehouse or serial number.
 <br/><br/>
 FIFO is advised if you manage all your workflows into PerfectWORK (Sales, Purchases, Inventory). It suits any kind of users.</p>
-<h2 id="inventory-valuation-manual-or-automated">Inventory Valuation: Manual or Automated<a class="headerlink" href="#inventory-valuation-manual-or-automated" title="Permanent link">¶</a></h2>
+<h2 id="inventory-valuation-automated-or-manual">Inventory Valuation: Automated or Manual<a class="headerlink" href="#inventory-valuation-automated-or-manual" title="Permanent link">¶</a></h2>
 <p>There are two ways to record your inventory valuation in your accounting books. As the costing method, this is defined in your product category. Those two methods are detailed below.It is important to also note that the accounting entries will depend on your accounting mode: it can be <strong>continental</strong> or <strong>anglo-saxon</strong>. 
-<br/>
-In continental accounting, the cost of a good is taken into account as soon as the product is received in stock. In anglo-saxon accounting, the cost of a good is only recorded as an expense when this good is invoiced to a final customer. In the tables below, you can easily compare those two accounting modes.Usually, based on your country, the correct accounting mode will be chosen by default.</p>
-<h3 id="manual-inventory-valuation">Manual Inventory Valuation<a class="headerlink" href="#manual-inventory-valuation" title="Permanent link">¶</a></h3>
-<p>In this case, goods receipts and deliveries won’t have any direct impact on your accounting books. Periodically, you create a manual journal entry representing the value of what you have in stock. To know that value, go in Inventory ‣ Reporting ‣ Inventory Valuation.This is the default configuration in PerfectWORK and it works out-of-the-box. Check following operations and find out how PerfectWORK is managing the accounting postings.</p>
-<h4 id="continental-accounting">Continental Accounting<a class="headerlink" href="#continental-accounting" title="Permanent link">¶</a></h4>
-<h5 id="vendor-bill">Vendor Bill<a class="headerlink" href="#vendor-bill" title="Permanent link">¶</a></h5>
-<p>Selling product for $50 with 7% GST Tax</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Debit</th>
-<th>Credit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Assets: Inventory</td>
-<td>50</td>
-<td></td>
-</tr>
-<tr>
-<td>Assets: Deferred Tax Assets</td>
-<td>3.50</td>
-<td></td>
-</tr>
-<tr>
-<td>Liabilities: Accounts Payable</td>
-<td></td>
-<td>53.50</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Configuration</strong>:<br/>
-    - <em>Purchased Goods</em>: defined on the product or on the internal category of related product (Expense Account field) <br/>
-    - <em>Deferred Tax Assets</em>: defined on the tax used on the purchase order line<br/>
-    - <em>Accounts Payable</em>: defined on the vendor related to the bill<br/></p>
-</div>
-<h5 id="goods-receptions">Goods Receptions<a class="headerlink" href="#goods-receptions" title="Permanent link">¶</a></h5>
-<p><em>There is no journal entry</em></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Debit</th>
-<th>Credit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Assets: Inventory</td>
-<td>X</td>
-<td></td>
-</tr>
-<tr>
-<td>Expenses: Stock Variation</td>
-<td></td>
-<td>X</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If the stock value decreased ( may due to adjustment ), the <strong>Inventory</strong> account is credited and the <strong>Inventory Variations</strong> debited.</p>
-</div>
-<p>At the end of the month/year, your company does a physical inventory or just relies on the inventory in PerfectWORK to value the stock into your books.  Create a journal entry to move the stock variation value from your Profit&amp;Loss section to your assets.</p>
+<br/><br/>
+In continental accounting, the cost of a good is taken into account as soon as the product is received in stock. 
+<br/><br/>
+In anglo-saxon accounting, the cost of a good is only recorded as an expense when this good is invoiced to a final customer. In the tables below, you can easily compare those two accounting modes.Usually, based on your country, the correct accounting mode will be chosen by default.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Anglo-Saxon or Continental Accounting" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
+<a aria-label="Previous: Inventory Management - Anglo-Saxon or Continental Accounting" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -1020,17 +902,17 @@ In continental accounting, the cost of a good is taken into account as soon as t
 <span class="md-footer__direction">
                 Previous
               </span>
-              Anglo-Saxon or Continental Accounting
+              Inventory Management - Anglo-Saxon or Continental Accounting
             </div>
 </div>
 </a>
-<a aria-label="Next: Sales &amp; Distribution" class="md-footer__link md-footer__link--next" href="../../../03_sales/" rel="next">
+<a aria-label="Next: Automated Inventory Valuation" class="md-footer__link md-footer__link--next" href="../02_automated_inventory_valuation/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Sales &amp; Distribution
+              Automated Inventory Valuation
             </div>
 </div>
 <div class="md-footer__button md-icon">
