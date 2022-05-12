@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="PerfectWORK" name="author"/>
-<link href="https://perfectwork-app.github.io/gethelp/05_internal/09_backend_view/" rel="canonical"/>
+<link href="https://perfectwork-app.github.io/gethelp/09_internal/09_backend_view/" rel="canonical"/>
 <link href="../../assets/pw_logo.png" rel="icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-8.1.7" name="generator"/>
 <title>PerfectWORK</title>
@@ -25,9 +25,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#need-to-structure-the-data">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -49,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Front End
+              Backend View
             
           </span>
 </div>
@@ -124,6 +121,11 @@
       </a>
 </li>
 <li class="md-tabs__item">
+<a class="md-tabs__link" href="../../02_solution_guide/">
+        Industrial Solutions
+      </a>
+</li>
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../04_developer/">
         Developer Guide
       </a>
@@ -135,7 +137,7 @@
 <div class="md-container" data-md-component="container">
 <main class="md-main" data-md-component="main">
 <div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
@@ -594,24 +596,69 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../04_developer/">Developer Guide</a>
+<a href="../../02_solution_guide/">Industrial Solutions</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="Developer Guide" class="md-nav" data-md-level="1">
+<nav aria-label="Industrial Solutions" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Developer Guide
+          Industrial Solutions
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
+<a href="../../02_solution_guide/01_clinic_management/">Clinic Management</a>
+</div>
+<nav aria-label="Clinic Management" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Clinic Management
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../02_solution_guide/02_mentoring/">Mentoring &amp; Couching</a>
+</div>
+<nav aria-label="Mentoring &amp; Couching" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Mentoring &amp; Couching
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../04_developer/">Developer Guide</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Developer Guide" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Developer Guide
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" id="__nav_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
 <a href="../../04_developer/09_external_api/">External API</a>
 </div>
 <nav aria-label="External API" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_2">
+<label class="md-nav__title" for="__nav_4_2">
 <span class="md-nav__icon md-icon"></span>
           External API
         </label>
@@ -627,33 +674,25 @@
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#need-to-structure-the-data">
-    Need to structure the data
-  </a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/perfectwork-app/gethelp/blob/3.0/docs/05_internal/09_backend_view/index.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/perfectwork-app/gethelp/blob/3.0/docs/09_internal/09_backend_view/index.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1>Front End</h1>
-<h2 id="need-to-structure-the-data">Need to structure the data<a class="headerlink" href="#need-to-structure-the-data" title="Permanent link">¶</a></h2>
-</article>
+<div class="container px-5 py-1 mx-auto flex flex-wrap">
+<h1 class="text-l text-gray-700 font-medium">Internal User Only Guide</h1>
+</div>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-white overflow-hidden">
+<div class="p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-5">
+<a class="rounded overflow-hidden shadow-lg" href="10_actions">
+<img alt="Server Actions" class="w-full" src="../../assets/getting_started.jpg"/>
+<div class="px-6 py-4">
+<div class="font-regular text-l mb-2">Server Actions</div>
+</div>
+</a>
+</div>
+</div></article>
 </div>
 </div>
 </main>
