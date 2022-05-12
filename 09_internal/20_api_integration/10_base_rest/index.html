@@ -6,18 +6,18 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="PerfectWORK" name="author"/>
-<link href="https://perfectwork-app.github.io/gethelp/09_internal/09_backend_view/" rel="canonical"/>
-<link href="../../assets/pw_logo.png" rel="icon"/>
+<link href="https://perfectwork-app.github.io/gethelp/09_internal/20_api_integration/10_base_rest/" rel="canonical"/>
+<link href="../../../assets/pw_logo.png" rel="icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-8.1.7" name="generator"/>
 <title>PerfectWORK</title>
-<link href="../../assets/stylesheets/main.cd566b2a.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.cd566b2a.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700%7C&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Nunito";--md-code-font:""}</style>
-<link href="../../stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../stylesheets/tailwind.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/tailwind.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
 <body data-md-color-accent="red" data-md-color-primary="white" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -25,13 +25,16 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#base-rest">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
 <header class="md-header md-header--lifted" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="PerfectWORK Documentation" class="md-header__button md-logo" data-md-component="logo" href="https://perfectwork.app" title="PerfectWORK Documentation">
-<img alt="logo" src="../../assets/pw_logo.png"/>
+<img alt="logo" src="../../../assets/pw_logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -46,7 +49,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Backend View
+              REST API
             
           </span>
 </div>
@@ -111,22 +114,22 @@
 <div class="md-tabs__inner md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../..">
+<a class="md-tabs__link" href="../../..">
       Getting Started
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../01_application/">
+<a class="md-tabs__link" href="../../../01_application/">
         Application Guide
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../02_solution_guide/">
+<a class="md-tabs__link" href="../../../02_solution_guide/">
         Industrial Solutions
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../04_developer/">
+<a class="md-tabs__link" href="../../../04_developer/">
         Developer Guide
       </a>
 </li>
@@ -137,13 +140,13 @@
 <div class="md-container" data-md-component="container">
 <main class="md-main" data-md-component="main">
 <div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden="">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="PerfectWORK Documentation" class="md-nav__button md-logo" data-md-component="logo" href="https://perfectwork.app" title="PerfectWORK Documentation">
-<img alt="logo" src="../../assets/pw_logo.png"/>
+<img alt="logo" src="../../../assets/pw_logo.png"/>
 </a>
     PerfectWORK Documentation
   </label>
@@ -159,14 +162,14 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../..">
+<a class="md-nav__link" href="../../..">
         Getting Started
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/">Application Guide</a>
+<a href="../../../01_application/">Application Guide</a>
 <label for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -180,7 +183,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/01_platform/">Platform</a>
+<a href="../../../01_application/01_platform/">Platform</a>
 <label for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -204,12 +207,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/01_getting_started/01_overview/">
+<a class="md-nav__link" href="../../../01_application/01_platform/01_getting_started/01_overview/">
         Overview
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/01_getting_started/02_navigation/">
+<a class="md-nav__link" href="../../../01_application/01_platform/01_getting_started/02_navigation/">
         Navigation - UI
       </a>
 </li>
@@ -229,12 +232,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/02_companies_users/01_companies/">
+<a class="md-nav__link" href="../../../01_application/01_platform/02_companies_users/01_companies/">
         Companies
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/02_companies_users/10_users/">
+<a class="md-nav__link" href="../../../01_application/01_platform/02_companies_users/10_users/">
         Users
       </a>
 </li>
@@ -254,12 +257,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/03_connect/01_overview/">
+<a class="md-nav__link" href="../../../01_application/01_platform/03_connect/01_overview/">
         CONNECT Application
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/03_connect/02_email_communication/">
+<a class="md-nav__link" href="../../../01_application/01_platform/03_connect/02_email_communication/">
         Email Communication
       </a>
 </li>
@@ -279,22 +282,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/10_apps_integration/03_modules/">
+<a class="md-nav__link" href="../../../01_application/01_platform/10_apps_integration/03_modules/">
         Application &amp; Modules
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/10_apps_integration/05_authentication/">
+<a class="md-nav__link" href="../../../01_application/01_platform/10_apps_integration/05_authentication/">
         Authentication
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/10_apps_integration/06_google/">
+<a class="md-nav__link" href="../../../01_application/01_platform/10_apps_integration/06_google/">
         Google
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/01_platform/10_apps_integration/07_unsplash/">
+<a class="md-nav__link" href="../../../01_application/01_platform/10_apps_integration/07_unsplash/">
         Unsplash
       </a>
 </li>
@@ -307,7 +310,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/02_finance/">Finance &amp; Accounting</a>
+<a href="../../../01_application/02_finance/">Finance &amp; Accounting</a>
 <label for="__nav_2_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -321,7 +324,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_2" id="__nav_2_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/02_finance/01_getting_started/">Getting Started</a>
+<a href="../../../01_application/02_finance/01_getting_started/">Getting Started</a>
 <label for="__nav_2_3_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -333,7 +336,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/01_getting_started/01_accounting_concept/">
+<a class="md-nav__link" href="../../../01_application/02_finance/01_getting_started/01_accounting_concept/">
         Main Accounting Concepts
       </a>
 </li>
@@ -350,12 +353,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/01_getting_started/02_configuration/01_initial_setup/">
+<a class="md-nav__link" href="../../../01_application/02_finance/01_getting_started/02_configuration/01_initial_setup/">
         Initial Setup of PerfectWORK Accounting
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/01_getting_started/02_configuration/02_chart_of_accounts/">
+<a class="md-nav__link" href="../../../01_application/02_finance/01_getting_started/02_configuration/02_chart_of_accounts/">
         Chart of Accounts
       </a>
 </li>
@@ -375,12 +378,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/01_getting_started/03_process/01_invoice_to_payment/">
+<a class="md-nav__link" href="../../../01_application/02_finance/01_getting_started/03_process/01_invoice_to_payment/">
         From Customer Invoice to Payments Collection
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/01_getting_started/03_process/02_vendor_bill_to_payment/">
+<a class="md-nav__link" href="../../../01_application/02_finance/01_getting_started/03_process/02_vendor_bill_to_payment/">
         From Vendor Bill to Payment
       </a>
 </li>
@@ -393,7 +396,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" id="__nav_2_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/02_finance/02_accounts_receivable/">Accounts Receivable</a>
+<a href="../../../01_application/02_finance/02_accounts_receivable/">Accounts Receivable</a>
 <label for="__nav_2_3_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -417,17 +420,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/02_accounts_receivable/01_customer_invoices/01_invoice_to_payment/">
+<a class="md-nav__link" href="../../../01_application/02_finance/02_accounts_receivable/01_customer_invoices/01_invoice_to_payment/">
         Invoicing Process
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/02_accounts_receivable/01_customer_invoices/02_offer_cash_discount/">
+<a class="md-nav__link" href="../../../01_application/02_finance/02_accounts_receivable/01_customer_invoices/02_offer_cash_discount/">
         Offer Cash Discounts
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/02_accounts_receivable/01_customer_invoices/03_cash_rounding/">
+<a class="md-nav__link" href="../../../01_application/02_finance/02_accounts_receivable/01_customer_invoices/03_cash_rounding/">
         Cash Rounding
       </a>
 </li>
@@ -447,7 +450,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/02_accounts_receivable/02_customer_payment/01_different_way_payment/">
+<a class="md-nav__link" href="../../../01_application/02_finance/02_accounts_receivable/02_customer_payment/01_different_way_payment/">
         Different ways to record a payment
       </a>
 </li>
@@ -460,7 +463,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" id="__nav_2_3_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/02_finance/10_inventory/">Inventory Management</a>
+<a href="../../../01_application/02_finance/10_inventory/">Inventory Management</a>
 <label for="__nav_2_3_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -472,17 +475,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/10_inventory/01_inventory_valuation/">
+<a class="md-nav__link" href="../../../01_application/02_finance/10_inventory/01_inventory_valuation/">
         Inventory Valuation Configuration
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/10_inventory/02_automated_inventory_valuation/">
+<a class="md-nav__link" href="../../../01_application/02_finance/10_inventory/02_automated_inventory_valuation/">
         Automated Inventory Valuation
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_application/02_finance/10_inventory/03_manual_inventory_valuation/">
+<a class="md-nav__link" href="../../../01_application/02_finance/10_inventory/03_manual_inventory_valuation/">
         Manual Inventory Valuation
       </a>
 </li>
@@ -495,7 +498,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/03_sales/">Sales &amp; Distribution</a>
+<a href="../../../01_application/03_sales/">Sales &amp; Distribution</a>
 </div>
 <nav aria-label="Sales &amp; Distribution" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_4">
@@ -509,7 +512,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/04_marketing/">CRM &amp; Marketing</a>
+<a href="../../../01_application/04_marketing/">CRM &amp; Marketing</a>
 </div>
 <nav aria-label="CRM &amp; Marketing" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_5">
@@ -523,7 +526,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/05_website/">Website &amp; eCommerce</a>
+<a href="../../../01_application/05_website/">Website &amp; eCommerce</a>
 </div>
 <nav aria-label="Website &amp; eCommerce" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_6">
@@ -537,7 +540,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/06_manufacturing/">Manufacturing &amp; Warehouse</a>
+<a href="../../../01_application/06_manufacturing/">Manufacturing &amp; Warehouse</a>
 </div>
 <nav aria-label="Manufacturing &amp; Warehouse" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_7">
@@ -551,7 +554,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/07_supply_chain/">Supply Chain &amp; Logistics</a>
+<a href="../../../01_application/07_supply_chain/">Supply Chain &amp; Logistics</a>
 </div>
 <nav aria-label="Supply Chain &amp; Logistics" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_8">
@@ -565,7 +568,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/08_human_resources/">Human Resources</a>
+<a href="../../../01_application/08_human_resources/">Human Resources</a>
 </div>
 <nav aria-label="Human Resources" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_9">
@@ -579,7 +582,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../01_application/09_customer_services/">Customer Services</a>
+<a href="../../../01_application/09_customer_services/">Customer Services</a>
 </div>
 <nav aria-label="Customer Services" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_10">
@@ -596,7 +599,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../02_solution_guide/">Industrial Solutions</a>
+<a href="../../../02_solution_guide/">Industrial Solutions</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -610,7 +613,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../02_solution_guide/01_clinic_management/">Clinic Management</a>
+<a href="../../../02_solution_guide/01_clinic_management/">Clinic Management</a>
 </div>
 <nav aria-label="Clinic Management" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_2">
@@ -624,7 +627,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../02_solution_guide/02_mentoring/">Mentoring &amp; Couching</a>
+<a href="../../../02_solution_guide/02_mentoring/">Mentoring &amp; Couching</a>
 </div>
 <nav aria-label="Mentoring &amp; Couching" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_3">
@@ -641,7 +644,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../04_developer/">Developer Guide</a>
+<a href="../../../04_developer/">Developer Guide</a>
 <label for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -655,7 +658,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../04_developer/09_external_api/">External API</a>
+<a href="../../../04_developer/09_external_api/">External API</a>
 </div>
 <nav aria-label="External API" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_2">
@@ -674,31 +677,84 @@
 </div>
 </div>
 </div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-rest">
+    Base REST
+  </a>
+<nav aria-label="Base REST" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installation">
+    Installation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration">
+    Configuration
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/perfectwork-app/gethelp/blob/3.0/docs/09_internal/09_backend_view/index.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/perfectwork-app/gethelp/blob/3.0/docs/09_internal/20_api_integration/10_base_rest.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<div class="container px-5 py-1 mx-auto flex flex-wrap">
-<h1 class="text-l text-gray-700 font-medium">Backend View</h1>
+<h1>REST API</h1>
+<h2 id="base-rest">Base REST<a class="headerlink" href="#base-rest" title="Permanent link">¶</a></h2>
+<p>This addon provides the basis to develop high level REST APIs for Odoo.</p>
+<p>As Odoo becomes one of the central pieces of enterprise IT systems, it often becomes necessary to set up specialized service interfaces, so existing systems can interact with Odoo.</p>
+<p>While the XML-RPC interface of Odoo comes handy in such situations, it requires a deep understanding of Odoo’s internal data model. When used extensively, it creates a strong coupling between Odoo internals and client systems, therefore increasing maintenance costs.</p>
+<p>Once developed, an OpenApi documentation is generated from the source code and available via a Swagger UI served by your odoo server at <a href="https://my_odoo_server/api-docs">https://my_odoo_server/api-docs</a>.</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h3>
+<p>Need to install base_rest, base_rest_datamodel, data_model modules
+<br/><br/>
+Need to have the following python libraries - </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>apispec,
+cachetools,
+cerberus,
+jsondiff,
+marshmallow,
+marshmallow_objects,
+pyquerystring,
+parse-accept-language</p>
 </div>
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-white overflow-hidden">
-<div class="p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-5">
-<a class="rounded overflow-hidden shadow-lg" href="10_actions">
-<img alt="Server Actions" class="w-full" src="../assets/developers.jpg"/>
-<div class="px-6 py-4">
-<div class="font-regular text-l mb-2">Server Actions</div>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">¶</a></h3>
+<p>If an error occurs when calling a method of a service (ie missing parameter, ..) the system returns only a general description of the problem without details. This is done on purpose to ensure maximum opacity on implementation details and therefore lower security issue.
+<br/><br/>
+This restriction can be problematic when the services are accessed by an external system in development. To know the details of an error it is indeed necessary to have access to the log of the server. It is not always possible to provide this kind of access. That's why you can configure the server to run these services in development mode.
+<br/><br/>
+To run the REST API in development mode you must add a new section '[base_rest]' with the option 'dev_mode=True' in the server config file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[base_rest]
+dev_mode=True</p>
 </div>
-</a>
-</div>
-</div></article>
+<p>When the REST API runs in development mode, the original description and a stack trace is returned in case of error. Be careful to not use this mode in production.</p>
+</article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Internal Use Only Guide" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
+<a aria-label="Previous: Backend View" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -707,17 +763,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Internal Use Only Guide
+              Backend View
             </div>
 </div>
 </a>
-<a aria-label="Next: Actions" class="md-footer__link md-footer__link--next" href="10_actions/" rel="next">
+<a aria-label="Next: Migration Guide (OpenUpgrade)" class="md-footer__link md-footer__link--next" href="../../99_migration/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Actions
+              Migration Guide (OpenUpgrade)
             </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -765,9 +821,9 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
-<script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+<script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-<script src="../../javascripts/extra.js"></script>
+<script src="../../../javascripts/extra.js"></script>
 </body>
 </html>
