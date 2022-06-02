@@ -1,5 +1,5 @@
 ---
-title: Technologies Stack
+title: Configuration Guide
 no_toc: true
 ---
 

@@ -1,13 +1,15 @@
-site_name: PerfectWORK
+site_name: PerfectWORK Documentation
 site_url: https://perfectwork-app.github.io/gethelp/
 repo_url: https://github.com/perfectwork-app/gethelp
 repo_name: perfectwork-app/gethelp
 edit_uri: blob/3.0/docs/
 
 # Copyright
-copyright: PerfectWORK 2021
+copyright: PerfectWORK 2022
 
 theme:
+  logo: assets/pw_logo.png
+  favicon: assets/pw_logo.png
   font:
     text: Nunito
   icon:
@@ -31,13 +33,13 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    # - toc.integrate
+    - tabs
   name: material
   custom_dir: overrides
   palette:
     - scheme: default
-      primary: teal
-      accent: light-green
+      primary:  white
+      accent: red
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -49,8 +51,6 @@ theme:
         name: Switch to light mode
 extra:
   homepage: https://perfectwork.app
-  version:
-    provider: mike
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
@@ -75,7 +75,6 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/squidfunk
 
-
 extra_css:
   - stylesheets/extra.css
   - stylesheets/tailwind.css
@@ -92,6 +91,7 @@ markdown_extensions:
   - def_list
   - footnotes
   - meta
+  - tables
   - md_in_html
   - toc:
       permalink: true
@@ -117,23 +117,20 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
   - pymdownx.snippets
-  - pymdownx.tabbed
-  - pymdownx.tasklist:
-      custom_checkbox: true
 
-
-plugins:   
+plugins:
   - search
+  - autorefs
   - mermaid2
-  - macros
   - monorepo
   - awesome-pages
-  - mkdocstrings
+  - macros
   - mkdocs-jupyter
   - encryptcontent: {
       summary: 'For Partners / Employees Only',
@@ -159,7 +156,8 @@ plugins:
 #     - Industrial Solution: '!include ./03_industrial/mkdocs.yml'
 #     - Notebook page: notebook.ipynb
 #     - Python file: python_script.py
-
+copyright: This documentation is hosted by <a href="https://perfectwork.app/">PerfectWORK</a>
+site_author: PerfectWORK
 nav:
   - index.md
   - ...
