@@ -499,6 +499,9 @@
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../../01_application/03_sales/">Sales &amp; Distribution</a>
+<label for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-label="Sales &amp; Distribution" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_4">
@@ -506,6 +509,20 @@
           Sales &amp; Distribution
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4_2" id="__nav_2_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../01_application/03_sales/06_managing_pricing/">Managing Pricing</a>
+</div>
+<nav aria-label="Managing Pricing" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_2">
+<span class="md-nav__icon md-icon"></span>
+          Managing Pricing
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -1166,7 +1183,7 @@ record.size();</code></p>
     <code>json 
     121</code>
 Conversely, picking only three fields deemed interesting.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio"/><input id="__tabbed_9_2" name="__tabbed_9" type="radio"/><input id="__tabbed_9_3" name="__tabbed_9" type="radio"/><input id="__tabbed_9_4" name="__tabbed_9" type="radio"/><div class="tabbed-labels"><label for="__tabbed_9_1">Python</label><label for="__tabbed_9_2">Ruby</label><label for="__tabbed_9_3">PHP</label><label for="__tabbed_9_4">Java</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio"><input id="__tabbed_9_2" name="__tabbed_9" type="radio"/><input id="__tabbed_9_3" name="__tabbed_9" type="radio"/><input id="__tabbed_9_4" name="__tabbed_9" type="radio"/><div class="tabbed-labels"><label for="__tabbed_9_1">Python</label><label for="__tabbed_9_2">Ruby</label><label for="__tabbed_9_3">PHP</label><label for="__tabbed_9_4">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><code>python
@@ -1192,7 +1209,7 @@ asList((Object[])models.execute("execute_kw", asList(
 )));</code></p>
 </div>
 </div>
-</div>
+</input></div>
 <p>Result:
     <code>json 
     [{"comment": false, "country_id": [21, "Belgium"], "id": 7, "name": "Agrolait"}]</code></p>
